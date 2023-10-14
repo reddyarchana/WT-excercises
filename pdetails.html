@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pdetails.css">
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <div class="gallery">
+                <img src="g1.jpeg" id="productImg" alt="">
+                <div class="controls">
+                  <span class="btn"></span> 
+                  <span class="btn"></span> 
+                  <span class="btn"></span> 
+                </div>
+            </div>
+            <div class="details">
+                <h1>Birthday Magic Mug</h1>
+                <h2>Rs.354</h2>
+                <h3>12% OFF</h3>
+                
+                <p>This ceramic mug has been specially designed as a perfect birthday gift. It makes an ideal home and living gift. It can be personalized with a photo too. Simply pour hot liquid into the mug and the picture will be visible.</p>
+            <div class="quantity-select">
+                <p>Quantity</p>
+                <input type="number" value="1">
+         </div>
+         <form>
+         <button class="btnn1">Add To Cart</button>
+         <button class="btnn2">Buy Now</button>
+         </form>    
+        </div>
+        </div>
+    </div>
+    <script>
+        let productImg=document.getElementById("productImg");
+        let btnnn=document.getElementByIdClassName("btn");
+        btnnn[0].onclick=function()
+        {
+            productImg.src=btnnn[0].src;
+        }
+        btnnn[1].onclick=function()
+        {
+            productImg.src=btnnn[1].src;
+        }
+        btnnn[2].onclick=function()
+        {
+            productImg.src=btnnn[2].src;
+        }
+
+    </script>
+</body>
+</html>

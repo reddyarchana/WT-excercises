@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT recomend1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            padding-top: 20px;
+        }
+        .body{
+            font-family: sans-serif;
+        }
+        .small-container{
+            max-width: 1000px;
+            margin: auto;
+            padding-left: 50px;
+            padding-right: 20px;
+
+        }
+.row{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.small-product{
+    margin-top: 80px;
+}
+.small-img-row{
+    display: flex;
+    justify-content: space-around;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor:pointer;
+}
+.single-product .col-2 img{
+    padding: 0;
+}
+.single-product .col-2{
+    padding: 10px;
+}
+.col-2{
+    flex-basis: 50%;
+   min-width:300px;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height:60px ;
+    margin: 10px 0;
+}
+.single-product h4,h5{
+    margin: 10px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+input:focus{
+    outline: none;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+.single-product .fa{
+    color: #ff523b;
+    margin-left: 10px;
+}
+p{
+    color: #555;
+}
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 20px;
+    margin: 30px 0;
+    border-radius: 10px;
+    transition: background 0.5ms;
+}
+.btn:hover{
+    background: #201e1e;
+}
+    </style>
+</head>
+<body>
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="rec11.jpeg" width="100%" id="productImg">
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="rec1.jpeg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="rec111.jpeg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="rec1111.jpeg" width="100%" class="small-img">
+                </div>
+                
+            
+            </div>
+            </div>
+<div class="col-2">
+    <p>Birthday Gifts</p>
+    <h1>Gliter Cushion</h1>
+    <h4> Rs.<span style="color: rgb(60, 119, 245);">575</span></h4>
+    <h5>Discount: <span style="color:rgb(69, 37, 253);">2% OFF</span></h5>
+    
+    <a href="" class="btn">Add TO CART</a>
+    <a href="" class="btn">BUY NOW</a><br>
+    <h3>QUANTITY <input type="number" value="1"></h3>
+    <h3>Product Details <i class="fa fa-indent"></i></h3>
+<br>
+<p>Looking to gift something unique and memorable to anyone special for Christmas. Here's a square shaped personalized couple sequins cushion in the most beautiful make. 
+    The cushion has silver matte finish sequins with a picture of your choice in the center to make it a special one.
+    </p>
+</div>
+        </div>
+    </div>
+    <script>
+        var productImg=document.getElementById("productImg");
+        var SmallImg=document.getElementsByClassName("small-img");
+        SmallImg[0].onclick=function()
+        {
+            productImg.src=SmallImg[0].src;
+        }
+        SmallImg[1].onclick=function()
+        {
+            productImg.src=SmallImg[1].src;
+        }
+        SmallImg[2].onclick=function()
+        {
+            productImg.src=SmallImg[2].src;
+        }
+        SmallImg[3].onclick=function()
+        {
+            productImg.src=SmallImg[3].src;
+        }
+    </script>
+</body>
+</html>
